@@ -14,6 +14,7 @@ public class LoadNextScene : MonoBehaviour {
 	void Update () {
 		
 	}
+    //Den här gör så att när något rör objectet där detta scriptet är på laddas en ny scene som jag har bestämt i unity
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(chosenscene);

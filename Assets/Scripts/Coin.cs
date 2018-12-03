@@ -5,9 +5,10 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public int score = 1;
-
+    //När den nuddar något kollar den om det är spelaren
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Den kollar om den den saken som nuddar har tagen player
         if (collision.tag == "Player")
         {
             //Skapa en temporär variabel "controller" och sätt den till 
@@ -35,6 +36,7 @@ public class Coin : MonoBehaviour
                 Debug.LogError("GameController finns inte");
             }
 
+            //Tar bort sig själv
             Destroy(gameObject);
         }
         

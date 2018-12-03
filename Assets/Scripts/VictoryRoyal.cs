@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//Det gör som man kan ladda barnor
 using UnityEngine.SceneManagement;
 
 public class VictoryRoyal : MonoBehaviour
